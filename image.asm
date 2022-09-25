@@ -1,7 +1,7 @@
 BasicUpstart2(start)
 	* = $080d
 
-.var music = LoadSid("axelf.sid")
+.var music = LoadSid("sids/axelf.sid")
 
 // 		Initialisation		//
 
