@@ -1,2 +1,5 @@
-hello and welcome! this is the luu compsoc 2022 freshers stall demo.
-this program was written entirely in 6502 assembly. read the printout or ask javid for a technical explanation!
+hello and welcome! this is the luu comp
+soc 2022 freshers stall demo. this prog
+ram was written entirely in 6502 assemb
+ly. read the printout or ask javid for 
+a technical explanation!
