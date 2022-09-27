@@ -320,8 +320,8 @@ scroll:
 	.byte $7
 
 credit:
-	.text "      luu compsoc stall 2022 demo      "
-	.text "        - written by javid mann -      "
+	.text "      luu compsoc stall 2022 demo       "
+	.text "       - written by javid mann -        "
 
 text:
 	.text "                                        "
