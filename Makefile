@@ -1,6 +1,6 @@
 CC = java -jar ../../Programs/KickAssembler/KickAss.jar
 CCFLAGS = -replacefile sids/compsocmusic.sid 
-TARGETS = compsoc-atw compsoc-axel compsoc-cyb compsoc-cyb2 compsoc-ln2 compsoc-motr compsoc-star
+TARGETS = compsoc-atw compsoc-axel compsoc-cyb compsoc-cyb2 compsoc-ln2 compsoc-motr compsoc-awm compsoc-star compsoc-light compsoc-cc compsoc-sanx
 
 all:	${TARGETS}
 
@@ -22,8 +22,20 @@ compsoc-ln2:
 compsoc-motr:
 	${CC} compsocdemo.asm -o out/compsoc-motr ${CCFLAGS} sids/montyontherun.sid
 
+compsoc-awm:
+	${CC} compsocdemo.asm -o out/compsoc-awm ${CCFLAGS} sids/aufwiedersehenmonty.sid
+
 compsoc-star:
 	${CC} compsocdemo.asm -o out/compsoc-star ${CCFLAGS} sids/starforce.sid
+
+compsoc-light:
+	${CC} compsocdemo.asm -o out/compsoc-light ${CCFLAGS} sids/lightforce.sid
+
+compsoc-cc:
+	${CC} compsocdemo.asm -o out/compsoc-cc ${CCFLAGS} sids/crazycomets.sid
+
+compsoc-sanx:
+	${CC} compsocdemo.asm -o out/compsoc-sanx ${CCFLAGS} sids/sanxion.sid
 
 clean:
 	rm -f out/* *.prg *.sym
