@@ -92,32 +92,29 @@ irq1:					// Begin double interrupt. This ensures
 						// that the position of the VIC drawing the
 						// current line is known
 
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-
-						// 16 CYCLES USED
-
 	asl $d019			// Clear interrupt condition on VIC
 
-						// 20 CYCLES USED
+						// 6 CYCLES USED
 
 	lda #<irq2			// Set up pointer to stable raster interrupt
 	sta $fffe
 	lda #>irq2
 	sta $ffff
-						// 34 CYCLES USED
+						// 18 CYCLES USED
 
 	inc $d012			// Set raster interrupt to the next line
 
 	tsx					// Store the stack pointer (for correct rti)
 
-						// 42 CYCLES USED
+						// 26 CYCLES USED
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
 	nop
 	nop
 	nop
